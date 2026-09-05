@@ -1,4 +1,4 @@
-# Birhane Gebrewahid — Portfolio
+# Birhane Gebrewahid - Portfolio
 
 Personal portfolio site for Birhane Asefa Gebrewahid, Data Engineer / AI Engineer.
 Built with React, TypeScript, Vite, and Tailwind CSS. Content is sourced directly

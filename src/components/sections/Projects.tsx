@@ -19,14 +19,14 @@ export default function Projects() {
           >
             <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-3">
               <h3 className="text-xl font-medium">{project.name}</h3>
-              <span className="font-mono text-[11px]" style={{ color: TIER_COLOR[project.tier] }}>
+              <span className="font-mono text-sm" style={{ color: TIER_COLOR[project.tier] }}>
                 {project.tier}
               </span>
             </div>
 
             <ul className="flex flex-col gap-2 mb-4">
               {project.description.map((line) => (
-                <li key={line} className="text-sm leading-relaxed" style={{ color: 'var(--text-muted)' }}>
+                <li key={line} className="text-base leading-relaxed" style={{ color: 'var(--text-muted)' }}>
                   {line}
                 </li>
               ))}
@@ -34,17 +34,18 @@ export default function Projects() {
 
             <div className="flex flex-wrap gap-x-3 gap-y-1 mb-4">
               {project.stack.map((tech) => (
-                <span key={tech} className="font-mono text-[11px]" style={{ color: 'var(--text-faint)' }}>
+                <span key={tech} className="font-mono text-sm" style={{ color: 'var(--text-faint)' }}>
                   {tech}
                 </span>
               ))}
             </div>
 
+            div
             <a
               href={project.repo}
               target="_blank"
               rel="noreferrer"
-              className="font-mono text-[13px] border-b"
+              className="font-mono text-base border-b"
               style={{ borderColor: 'var(--line)' }}
             >
               View repository
