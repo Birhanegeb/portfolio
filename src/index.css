@@ -1,0 +1,131 @@
+@import "tailwindcss";
+@import "@fontsource-variable/fraunces";
+@import "@fontsource-variable/inter";
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+
+:root {
+  --bg: #eaf4fb;
+  --bg-raised: #dcedf9;
+  --bg-raised-2: #cfe6f5;
+  --line: #c3dcee;
+  --line-soft: #d6e9f6;
+  --text: #16164f;
+  --text-muted: #40406f;
+  --text-faint: #6e6ea3;
+
+  /* project-tier accents (bronze / silver / gold) */
+  --bronze: #d97b56;
+  --bronze-soft: #d97b5626;
+  --silver: #2fb6a6;
+  --silver-soft: #2fb6a622;
+  --gold: #6c63d6;
+  --gold-soft: #6c63d626;
+
+  /* interactive hover / focus accent — separate from the tier colors above */
+  --accent-hover: #1e6fe0;
+  --accent-hover-soft: #1e6fe026;
+
+  /* one distinct background tint per section, for a visible hand-off while scrolling */
+  --section-hero: #eaf4fb;
+  --section-experience: #fdece0;
+  --section-skills: #e3f5f1;
+  --section-projects: #efeefc;
+  --section-education: #fdf3d9;
+  --section-contact: #e8eefc;
+
+  --font-display: 'Fraunces Variable', ui-serif, Georgia, serif;
+  --font-body: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--accent-hover-soft);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-hover);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.font-display { font-family: var(--font-display); }
+.font-mono { font-family: var(--font-mono); }
+
+.container-page {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .container-page {
+    padding-inline: 3rem;
+  }
+}
+
+.prose-copy {
+  max-width: 62ch;
+}
+
+.hero-link {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--text);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2px;
+  transition: border-color 150ms ease, color 150ms ease;
+}
+.hero-link:hover {
+  border-color: var(--accent-hover);
+  color: var(--accent-hover);
+}
+
+.pipeline-pulse {
+  position: absolute;
+  top: 0;
+  left: -20%;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--accent-hover), transparent);
+  animation: pipeline-flow 3.2s ease-in-out 0.4s 1 both;
+}
+
+@keyframes pipeline-flow {
+  0% { left: -20%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { left: 100%; opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pipeline-pulse { display: none; }
+}
