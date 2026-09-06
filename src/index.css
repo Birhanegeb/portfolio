@@ -81,7 +81,7 @@ a {
 .font-mono { font-family: var(--font-mono); }
 
 .container-page {
-  width: 100%;
+  width: 90%;
   padding-inline: 1.5rem;
 }
 
@@ -92,7 +92,7 @@ a {
 }
 
 .prose-copy {
-  max-width: none;
+  max-width: 70ch;
 }
 
 .hero-link {
