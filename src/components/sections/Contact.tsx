@@ -65,7 +65,7 @@ export default function Contact() {
         >
           Built with React, TypeScript, and Tailwind CSS.
           <br />
-          Made by Birhane Gebrewahid. © 2024.
+          Made by Birhane. © 2024.
         </p>
       </div>
     </section>

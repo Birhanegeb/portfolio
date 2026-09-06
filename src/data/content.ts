@@ -1,5 +1,5 @@
 export const profile = {
-  name: 'Birhane Asefa Gebrewahid',
+  name: 'Birhane Gebrewahid',
   title: 'Data Engineer / AI Engineer',
   location: 'Bremen, Germany',
   email: 'breasgd1@gmail.com',
