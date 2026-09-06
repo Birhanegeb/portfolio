@@ -1,15 +1,12 @@
-# Birhane Gebrewahid - Portfolio
+## Portfolio
 
-Personal portfolio site for Birhane Asefa Gebrewahid, Data Engineer / AI Engineer.
-Built with React, TypeScript, Vite, and Tailwind CSS. Content is sourced directly
-from the CV and from the pinned repositories at
-[github.com/Birhanegeb](https://github.com/Birhanegeb).
+Personal portfolio built with React, TypeScript, Vite, and Tailwind CSS.
 
 ## Tech stack
 
 - [Vite](https://vite.dev) + React 19 + TypeScript
 - [Tailwind CSS v4](https://tailwindcss.com)
-- Self-hosted variable fonts (Fraunces, Inter, IBM Plex Mono) via Fontsource — no external font requests
+- Self-hosted variable fonts (Fraunces, Inter, IBM Plex Mono) via Fontsource - no external font requests
 - No client-side router (single scrolling page) — works from any subpath, including a GitHub Pages project URL
 
 ## Project structure
@@ -63,8 +60,8 @@ This repo includes `.github/workflows/deploy.yml`, which builds the site and dep
 4. The site will be published at:
    `https://<your-github-username>.github.io/<repository-name>/`
 
-The Vite config uses a relative build base (`base: './'`), so the site works
-correctly at any subpath — no need to hard-code the repository name anywhere.
+The Vite config uses a relative build base (`base: '/'`), so the site works
+correctly at any subpath - no need to hard-code the repository name anywhere.
 
 ## Adding this to your GitHub profile
 
@@ -78,5 +75,5 @@ correctly at any subpath — no need to hard-code the repository name anywhere.
 ## Content policy
 
 All experience, education, and project details come from the CV and the actual
-GitHub repositories. Nothing is invented — see `src/data/content.ts` for the single
+GitHub repositories. Nothing is invented - see `src/data/content.ts` for the single
 source of truth used across the site.
