@@ -2,7 +2,7 @@ export const profile = {
   name: 'Birhane Asefa Gebrewahid',
   title: 'Data Engineer / AI Engineer',
   location: 'Bremen, Germany',
-  email: 'bgeb.applyj@gmail.com',
+  email: 'breasgd1@gmail.com',
   github: 'https://github.com/Birhanegeb',
   linkedin: 'https://www.linkedin.com/in/bgeb721/',
   summary:

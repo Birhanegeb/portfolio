@@ -39,8 +39,6 @@ export default function Projects() {
                 </span>
               ))}
             </div>
-
-            div
             <a
               href={project.repo}
               target="_blank"
