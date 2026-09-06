@@ -26,7 +26,7 @@ export default function Hero() {
             style={{ background: 'var(--gold)' }}
             aria-hidden="true"
           />
-          <p className="font-mono text-lg sm:text-xl" style={{ color: 'var(--text)' }}>
+          <p className="font-mono text-lg sm:text-xl" style={{ color: 'var(text)' }}>
             Data Engineer / AI Engineer
           </p>
         </div>
