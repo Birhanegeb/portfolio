@@ -49,7 +49,7 @@ export default function Hero() {
         <PipelineFlow />
 
         <div className="flex flex-wrap gap-x-8 gap-y-3 mt-12">
-          <a href="#projects" className="hero-link">
+          <a href="https://birhanegeb.github.io/#projects" className="hero-link">
             View projects
           </a>
           <a href={profile.github} target="_blank" rel="noreferrer" className="hero-link">
