@@ -20,13 +20,24 @@ export default function Hero() {
           {profile.name}
         </h1>
 
-        <div className="flex items-baseline gap-3 mb-10">
-          <span
-            className="h-px w-10 shrink-0"
-            style={{ background: 'var(--gold)' }}
+        <div className="flex items-center gap-3 mb-10">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="var(--gold)"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             aria-hidden="true"
-          />
-          <p className="font-mono text-lg sm:text-xl" style={{ color: 'var(text)' }}>
+            className="shrink-0"
+          >
+            <rect x="3" y="4" width="18" height="14" rx="2" />
+            <path d="M7 9l3 3-3 3" />
+            <path d="M13 15h4" />
+          </svg>
+          <p className="font-mono text-lg sm:text-xl" style={{ color: 'var(--text)' }}>
             Data Engineer / AI Engineer
           </p>
         </div>
