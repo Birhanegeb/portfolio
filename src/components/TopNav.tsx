@@ -74,23 +74,20 @@ export default function TopNav({
             }}
           />
 
-          {SECTION_ORDER.map((id) => {
-            const isContact = id === 'contact'
-            return (
-              <li key={id} className="relative z-10">
-                <button
-                  data-id={id}
-                  onMouseEnter={() => setHovered(id)}
-                  onClick={() => onSelect(id)}
-                  aria-current={active === id ? 'page' : undefined}
-                  className="rounded-lg px-5 py-2.5"
-                  style={{ color: 'var(--text)', fontWeight: isContact ? 600 : 400 }}
-                >
-                  {SECTION_LABELS[id]}
-                </button>
-              </li>
-            )
-          })}
+          {SECTION_ORDER.map((id) => (
+            <li key={id} className="relative z-10">
+              <button
+                data-id={id}
+                onMouseEnter={() => setHovered(id)}
+                onClick={() => onSelect(id)}
+                aria-current={active === id ? 'page' : undefined}
+                className="rounded-lg px-5 py-2.5 font-semibold"
+                style={{ color: 'var(--text)' }}
+              >
+                {SECTION_LABELS[id]}
+              </button>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
